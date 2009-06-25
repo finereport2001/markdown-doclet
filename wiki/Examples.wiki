@@ -1,0 +1,3 @@
+#summary Examples of Markdown Doclet in use...
+
+= Example=
