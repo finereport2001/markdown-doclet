@@ -1,3 +1,4 @@
 #summary Examples of Markdown Doclet in use...
+#labels Featured
 
 = Example=
