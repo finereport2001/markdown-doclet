@@ -8,7 +8,6 @@
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
 <project name="MarkdownDoclet" default="default" basedir=".">
-    <property environment="env"/>
     <description>Builds, tests, and runs the project MarkdownDoclet.</description>
     <import file="nbproject/build-impl.xml"/>
     <target depends="init" name="-javadoc-build">
@@ -25,7 +24,9 @@
             </doclet>
         </javadoc>
     </target>
-
+    <target name="-pre-compile">
+        <property environment="env"/>
+    </target>
     <!--
 
     There exist several targets which are by default empty and which can be 
