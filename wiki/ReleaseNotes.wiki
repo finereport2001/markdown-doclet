@@ -1,7 +1,7 @@
 #summary Release Notes for official builds.
 #labels Featured
 
-= Version 2 (MarkdownDoclet-v2.jar) =
+= Version 2 (`MarkdownDoclet-v2.jar`) =
 
   * Made changes such that <A></A> tags are correctly parsed by Markdown. This fixes the {@link} issues
   * Made changes such that `code` tags are replaced with the markdown "`" character. This fixes some instances of badly nested HTML in legacy Javadocs.
