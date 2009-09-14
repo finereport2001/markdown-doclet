@@ -1503,8 +1503,17 @@ public class HtmlDocletWriter extends HtmlDocWriter {
                 result.append(textBuff);
             }
         }
+        String markdownString = result.toString();
+        // fix for case-sensitive <A> tag
+        markdownString = markdownString.replace("<A HREF", "<a href");
+        markdownString = markdownString.replace("</A>", "</a>");
+        // fix for inline <code> tags (convert to markdown)
+        markdownString = markdownString.replace("<code>", "`");
+        markdownString = markdownString.replace("</code>", "` ");
+        markdownString = markdownString.replace("<CODE>", "`");
+        markdownString = markdownString.replace("</CODE>", "` ");
+        String potentialResult = mp.markdown(markdownString).trim();
         // fix for single line results getting embedded in <p> tag </p>
-        String potentialResult = mp.markdown(result.toString()).trim();
         if (potentialResult.startsWith("<p>") && potentialResult.endsWith("</p>")) {
             if ( potentialResult.indexOf("<p>") == potentialResult.lastIndexOf("<p>")) {
                 potentialResult = potentialResult.substring(3, potentialResult.length()-4);
