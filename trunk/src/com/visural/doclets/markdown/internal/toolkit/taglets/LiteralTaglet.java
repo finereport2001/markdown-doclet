@@ -26,7 +26,7 @@ package com.visural.doclets.markdown.internal.toolkit.taglets;
 
 import java.util.Map;
 import com.sun.javadoc.Tag;
-import com.visural.doclets.markdown.Taglet;
+import com.sun.tools.doclets.Taglet;
 
 
 /**

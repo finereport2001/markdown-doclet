@@ -46,9 +46,9 @@ import com.sun.javadoc.*;
 
 public class LegacyTaglet implements Taglet {
 
-    private com.visural.doclets.markdown.Taglet legacyTaglet;
+    private com.sun.tools.doclets.Taglet legacyTaglet;
 
-    public LegacyTaglet(com.visural.doclets.markdown.Taglet t) {
+    public LegacyTaglet(com.sun.tools.doclets.Taglet t) {
         legacyTaglet = t;
     }
 

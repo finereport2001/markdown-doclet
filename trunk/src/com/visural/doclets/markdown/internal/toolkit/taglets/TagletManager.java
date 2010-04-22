@@ -351,8 +351,8 @@ public class TagletManager {
     private void checkTaglet(Object taglet) {
         if (taglet instanceof Taglet) {
             checkTagName(((Taglet) taglet).getName());
-        } else if (taglet instanceof com.visural.doclets.markdown.Taglet) {
-            com.visural.doclets.markdown.Taglet legacyTaglet = (com.visural.doclets.markdown.Taglet) taglet;
+        } else if (taglet instanceof com.sun.tools.doclets.Taglet) {
+            com.sun.tools.doclets.Taglet legacyTaglet = (com.sun.tools.doclets.Taglet) taglet;
             customTags.remove(legacyTaglet.getName());
             customTags.put(legacyTaglet.getName(), new LegacyTaglet(legacyTaglet));
             checkTagName(legacyTaglet.getName());
