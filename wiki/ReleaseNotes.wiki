@@ -1,9 +1,9 @@
 #summary Release Notes for official builds.
 #labels Featured
 
-= Version 3 (`MarkdownDoclet-3.0.jar`)
+= Version 3 (`MarkdownDoclet-3.0.jar`) =
 
-* Fixed [http://code.google.com/p/markdown-doclet/issues/detail?id=5 issue 5] - unable to use custom taglets with Markdown Doclet.
+  * Fixed [http://code.google.com/p/markdown-doclet/issues/detail?id=5 issue 5] - unable to use custom taglets with Markdown Doclet.
 
 = Version 2 (`MarkdownDoclet-v2.jar`) =
 
